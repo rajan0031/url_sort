@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00bcd4;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        .report-container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .report-container p {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        .report-container span {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #222;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Report</h1>
+
+    <%- include('header') %>
+
+        <div class="report-container">
+            <p>Name:</p>
+            <span>
+                <%= details.name %>
+            </span>
+
+            <p>Age:</p>
+            <span>
+                <%= details.age %>
+            </span>
+
+            <p>Marks:</p>
+            <span>
+                <%= details.marks %>
+            </span>
+
+            <p>College:</p>
+            <span>
+                <%= details.collage %>
+            </span>
+        </div>
+
+        <%- include('footer') %>
+
+</body>
+
+</html>
